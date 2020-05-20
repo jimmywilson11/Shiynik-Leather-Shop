@@ -1,0 +1,61 @@
+@import url(../css/fonts.css);
+footer .content-wrapper {
+  background-image: url(../img/footer_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer .content-wrapper .main-part {
+  border-bottom: 2px solid #FFF;
+}
+
+footer .content-wrapper .second-part .copyright {
+  color: #FFF;
+  padding: 15px;
+  margin: 0;
+  font: bold 0.625rem "Aktiv Grotesk Corp", sans-serif;
+  text-transform: uppercase;
+  color: #F6F4F2;
+}
+
+footer .content-wrapper .second-part .copyright .author-link {
+  color: #F34D1B;
+  text-decoration: none;
+  font: bold 0.75rem "Playfair Display", serif;
+}
+
+footer .content-wrapper .second-part .copyright .author-link:hover {
+  color: #DC143C;
+}
+
+footer .content-wrapper .second-part .payment-icons .payment-icon {
+  background-color: #F6F4F2;
+  border-radius: 5px;
+  display: inline-block;
+  opacity: .6;
+  padding: 6px;
+  padding-bottom: 0;
+  margin: 3px 3px 0;
+}
+
+footer .content-wrapper .second-part .payment-icons .payment-icon:hover {
+  opacity: 1;
+  -webkit-transition: .3s ease-in all;
+  transition: .3s ease-in all;
+}
+
+footer .content-wrapper .second-part .payment-icons .payment-icon .visa {
+  height: 20px;
+}
+
+footer .content-wrapper .second-part .payment-icons .payment-icon .master-card {
+  height: 20px;
+}
+
+footer .content-wrapper .second-part .payment-icons .payment-icon .liqpay {
+  height: 20px;
+}
+
+footer .content-wrapper .second-part .payment-icons .payment-icon .cash-on-delivery {
+  height: 20px;
+}

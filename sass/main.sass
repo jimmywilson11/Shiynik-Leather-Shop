@@ -1,0 +1,46 @@
+@import variables.sass
+
+footer
+    .content-wrapper
+        background-image: url(../img/footer_bg.png)
+        background-size: cover
+        background-repeat: no-repeat
+        .main-part
+            border-bottom: 2px solid $white        
+        .second-part
+            .copyright
+                color: $white
+                padding: 15px 
+                margin: 0
+                font: bold 0.625rem $main-font
+                text-transform: uppercase
+                color: #F6F4F2
+                .author-link
+                    color: $orange
+                    text-decoration: none
+                    font: bold 0.75rem $second-font
+                    &:hover
+                        color: $crimson
+            .payment-icons
+                .payment-icon
+                    background-color: #F6F4F2
+                    border-radius: 5px
+                    display: inline-block
+                    opacity: .6
+                    padding: 6px
+                    padding-bottom: 0
+                    margin: 3px 3px 0
+                    &:hover
+                        opacity: 1
+                        transition: .3s ease-in all
+                    .visa
+                        height: 20px
+                    .master-card
+                        height: 20px
+                    .liqpay
+                        height: 20px
+                    .cash-on-delivery
+                        height: 20px
+
+
+
