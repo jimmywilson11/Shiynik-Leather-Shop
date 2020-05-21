@@ -2,12 +2,96 @@
 
 footer
     .content-wrapper
+        padding-top: 3%
         background-image: url(../img/footer_bg.png)
         background-size: cover
         background-repeat: no-repeat
         .main-part
-            border-bottom: 2px solid $white        
+            padding: 30px 0
+            border-top: 2px solid $white
+            border-bottom: 2px solid $white
+            .subscribe_title
+                color: $white
+                font: 400 2rem $second-font        
+            .subscribe_cursive
+                color: $white
+                font: 400 1.5rem $second-font
+                font-style: italic
+            .mailchimp
+                margin-top: 5%
+                padding: 3% 5%
+                background-color: rgba(255, 255, 255, 0.1)
+                p
+                    font: 500 1rem $main-font
+                    color: $white
+                .email
+                    border: none
+                    border-bottom: 1px solid $white
+                    background-color: transparent
+                .check-box
+                    padding-bottom: 2%
+                    label
+                        font: 400 0.785rem $main-font
+                        line-height: 14px
+                        color: $white
+                .formEmailButton
+                    width: 50%
+                    background-color: $white
+                    border-style: none
+                    text-transform: uppercase
+                    color: $broun
+                    font: 400 1.25rem $main-font
+                    border: 2px solid $broun
+                    border-radius: 100px
+                    &:hover
+                        border: 2px solid $orange
+                        color: $orange
+                        transition: .3s ease-in all
+        .info-block
+            padding-top: 5%
+            h4
+                font: bold 0.875rem $main-font
+                color: $white
+                text-transform: uppercase 
+                line-height: 120%
+                letter-spacing: 0.24em
+            address
+                padding: 0
+                p
+                    font: 500 1.125rem $gilroy
+                    color: rgba(255, 255, 255, 0.5)
+                    line-height: 120%
+                    padding: 0
+                    margin: 0
+            .working-time
+                font: 500 1.125rem $gilroy
+                color: rgba(255, 255, 255, 0.5)
+                span
+                    color: $white
+                    font: 500 1.125rem $gilroy
+                    text-transform: uppercase
+            .contact-links
+                font: 500 1.125rem $gilroy
+                text-decoration: none
+                color: $white
+                &:hover
+                    transition: .1s all ease
+                    color: $orange
+                    span
+                        color: $white
+            .info-links
+                a
+                    font: 500 1.125rem $gilroy
+                    text-decoration: none
+                    color: $white
+                    &:hover
+                        color: $orange
+                li
+                    padding-top: 10px
+                    margin: 5px 0
+            
         .second-part
+            background-color: rgba(0, 0, 0, 0.4)
             .copyright
                 color: $white
                 padding: 15px 
@@ -43,4 +127,12 @@ footer
                         height: 20px
 
 
-
+@media (max-width: 768px) 
+    footer
+        .main-part
+            .subscribe_title
+                font: 400 50px $second-font     
+            .subscribe_cursive
+                color: $white
+                font: 400 2.5rem $second-font
+                font-style: italic
