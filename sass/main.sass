@@ -1,5 +1,19 @@
 @import variables.sass
-
+#testimonials
+    .testimonial-title
+        font: 900 1.75rem $second-font
+        color: $broun
+    .testimonial-link
+        font: 900 1.75rem $main-font
+        color: $orange
+        text-decoration: none
+        &:hover
+            color: $crimson
+    .eapps-widget-show-toolbar
+        a[target=_blank]
+            pointer-events: none
+            background-color: transparent
+            display: hidden !important
 footer
     .content-wrapper
         padding-top: 3%
@@ -125,14 +139,3 @@ footer
                         height: 20px
                     .cash-on-delivery
                         height: 20px
-
-
-@media (max-width: 768px) 
-    footer
-        .main-part
-            .subscribe_title
-                font: 400 50px $second-font     
-            .subscribe_cursive
-                color: $white
-                font: 400 2.5rem $second-font
-                font-style: italic
