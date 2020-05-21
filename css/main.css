@@ -1,4 +1,25 @@
 @import url(../css/fonts.css);
+#testimonials .testimonial-title {
+  font: 900 1.75rem "Playfair Display", serif;
+  color: #2F110F;
+}
+
+#testimonials .testimonial-link {
+  font: 900 1.75rem "Aktiv Grotesk Corp", sans-serif;
+  color: #F34D1B;
+  text-decoration: none;
+}
+
+#testimonials .testimonial-link:hover {
+  color: #DC143C;
+}
+
+#testimonials .eapps-widget-show-toolbar a[target=_blank] {
+  pointer-events: none;
+  background-color: transparent;
+  display: hidden !important;
+}
+
 footer .content-wrapper {
   padding-top: 3%;
   background-image: url(../img/footer_bg.png);
@@ -187,15 +208,4 @@ footer .content-wrapper .second-part .payment-icons .payment-icon .liqpay {
 
 footer .content-wrapper .second-part .payment-icons .payment-icon .cash-on-delivery {
   height: 20px;
-}
-
-@media (max-width: 768px) {
-  footer .main-part .subscribe_title {
-    font: 400 50px "Playfair Display", serif;
-  }
-  footer .main-part .subscribe_cursive {
-    color: #FFF;
-    font: 400 2.5rem "Playfair Display", serif;
-    font-style: italic;
-  }
 }
