@@ -1,4 +1,61 @@
 @import variables.sass
+header
+    .header-wrapper
+        .modal
+            .modal-dialog
+                .modal-content
+                    padding-top: 2%
+                    .close
+                        position: absolute
+                        left: 93%
+                        top: 0
+                        &:hover
+                            color: $orange
+                    .modal-title
+                        text-align: center
+                        font: 900 1.25rem $second-font
+                        text-transform: uppercase        
+                        .cursive
+                            display: block
+                            font-size: 2rem
+                            color: $orange
+                    .modal-body
+                        .modal-sub-title
+                            font: 600 1.225rem $second-font
+                            letter-spacing: .12em
+                            font-style: underline
+                        input
+                            border-style: none 
+                            border: 2px solid $broun
+                            font: 800 1rem $gilroy
+                            padding: 10px 15px
+                            margin: 3% 0
+                            &:hover
+                                transition: .3s all ease-in
+                                color: $orange
+                                border-color: $orange
+                        .submit-btn
+                            margin-top: 3%
+                            border: 2px solid $broun
+                            background-color: $white
+                            color: $broun
+                            font: 800 1rem $gilroy
+                            text-transform: uppercase
+                            border-radius: .25rem
+                            &:hover
+                                transition: .3s all ease-in
+                                color: $orange
+                                border-color: $orange
+                        .forgot-pass
+                            display: block
+                            color: $broun
+                            font: 600 0.75rem $main-font
+                            text-decoration: none
+                            cursor: pointer
+                            &:hover
+                                transition: .3s all ease-in
+                                color: $orange
+
 #testimonials
     .testimonial-title
         font: 900 1.75rem $second-font
