@@ -1,4 +1,82 @@
 @import url(../css/fonts.css);
+header .header-wrapper .modal .modal-dialog .modal-content {
+  padding-top: 2%;
+}
+
+header .header-wrapper .modal .modal-dialog .modal-content .close {
+  position: absolute;
+  left: 93%;
+  top: 0;
+}
+
+header .header-wrapper .modal .modal-dialog .modal-content .close:hover {
+  color: #F34D1B;
+}
+
+header .header-wrapper .modal .modal-dialog .modal-content .modal-title {
+  text-align: center;
+  font: 900 1.25rem "Playfair Display", serif;
+  text-transform: uppercase;
+}
+
+header .header-wrapper .modal .modal-dialog .modal-content .modal-title .cursive {
+  display: block;
+  font-size: 2rem;
+  color: #F34D1B;
+}
+
+header .header-wrapper .modal .modal-dialog .modal-content .modal-body .modal-sub-title {
+  font: 600 1.225rem "Playfair Display", serif;
+  letter-spacing: .12em;
+  font-style: underline;
+}
+
+header .header-wrapper .modal .modal-dialog .modal-content .modal-body input {
+  border-style: none;
+  border: 2px solid #2F110F;
+  font: 800 1rem "Gilroy", sans-serif;
+  padding: 10px 15px;
+  margin: 3% 0;
+}
+
+header .header-wrapper .modal .modal-dialog .modal-content .modal-body input:hover {
+  -webkit-transition: .3s all ease-in;
+  transition: .3s all ease-in;
+  color: #F34D1B;
+  border-color: #F34D1B;
+}
+
+header .header-wrapper .modal .modal-dialog .modal-content .modal-body .submit-btn {
+  margin-top: 3%;
+  border: 2px solid #2F110F;
+  background-color: #FFF;
+  color: #2F110F;
+  font: 800 1rem "Gilroy", sans-serif;
+  text-transform: uppercase;
+  border-radius: .25rem;
+}
+
+header .header-wrapper .modal .modal-dialog .modal-content .modal-body .submit-btn:hover {
+  -webkit-transition: .3s all ease-in;
+  transition: .3s all ease-in;
+  color: #F34D1B;
+  border-color: #F34D1B;
+}
+
+header .header-wrapper .modal .modal-dialog .modal-content .modal-body .forgot-pass {
+  display: block;
+  color: #2F110F;
+  font: 600 0.75rem "Aktiv Grotesk Corp", sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header .header-wrapper .modal .modal-dialog .modal-content .modal-body .forgot-pass:hover {
+  -webkit-transition: .3s all ease-in;
+  transition: .3s all ease-in;
+  color: #F34D1B;
+}
+
 #testimonials .testimonial-title {
   font: 900 1.75rem "Playfair Display", serif;
   color: #2F110F;
