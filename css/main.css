@@ -96,6 +96,7 @@ header .header-wrapper .modal .modal-dialog .modal-content .modal-body .forgot-p
   pointer-events: none;
   background-color: transparent;
   display: hidden !important;
+  z-index: -999;
 }
 
 footer .content-wrapper {
