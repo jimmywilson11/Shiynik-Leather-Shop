@@ -16,7 +16,6 @@
     <header>
         <div class="container-fluid header-wrapper text-center">
             <i class="fas fa-user-alt" data-toggle="modal" data-target="#sign-in-form"> Войти</i>
-            <i class="fas fa-user-alt" data-toggle="modal" data-target="#sign-up-form"> Зарегистрироваться</i>
             <div class="modal fade" id="sign-in-form" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -33,6 +32,8 @@
                                 <input type="text" placeholder="Пароль" class="login-password w-75" value="">
                                 <br>
                                 <input type="submit" value="Войти" class="submit-btn py-1 px-3">
+                                <a class="forgot-pass">Забыли Ваш пароль?</a>
+                                <p>Еще не зарегистрированы? <a class="creat-account" data-toggle="modal" href="#sign-up-form">Создать аккаунт</a></p>
                             </form>
                         </div>
                     </div>
@@ -56,7 +57,6 @@
                                 <input type="text" placeholder="Пароль" class="login-password w-75" value="">
                                 <input type="text" placeholder="Повторить пароль" class="login-confirm-password w-75" value="">
                                 <input type="submit" value="Зарегистрироваться" class="submit-btn py-1 px-3">
-                                <a class="forgot-pass">Забыли Ваш пароль?</a>
                             </form>
                         </div>
                     </div>
