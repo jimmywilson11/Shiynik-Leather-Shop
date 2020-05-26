@@ -26,7 +26,7 @@ header
                             font-style: underline
                         input
                             border-style: none 
-                            border: 2px solid $broun
+                            border-bottom: 2px solid $broun
                             font: 800 1rem $gilroy
                             padding: 10px 15px
                             margin: 3% 0
@@ -41,7 +41,7 @@ header
                             color: $broun
                             font: 800 1rem $gilroy
                             text-transform: uppercase
-                            border-radius: .25rem
+                            border-radius: 99px
                             &:hover
                                 transition: .3s all ease-in
                                 color: $orange
@@ -55,7 +55,6 @@ header
                             &:hover
                                 transition: .3s all ease-in
                                 color: $orange
-
 #testimonials
     .testimonial-title
         font: 900 1.75rem $second-font
@@ -197,3 +196,46 @@ footer
                         height: 20px
                     .cash-on-delivery
                         height: 20px
+
+.payment-and-delivery
+    section
+        padding-bottom: 6%
+    .section-title
+        font: 400 2.25rem $second-font
+        font-style: italic
+        line-height: 48px
+        color: $broun
+        padding-bottom: 60px
+    h2
+        font: 900 0.875rem  $main-font
+        text-transform: uppercase
+        letter-spacing: 0.24em
+        line-height: 120%
+        &::after
+            position: absolute
+            display: block
+            content: ''
+            width: 60px
+            margin-top: 3px
+            left: 48%
+            height: 1px
+            background-color: $broun
+    .payment-type-items, .delivery-type-items
+        li
+            padding: 20px 0
+            border-top: 1px solid $light-broun
+            &:nth-last-child(1)
+                border-bottom: 1px solid $light-broun
+            p
+                padding: 0 10px
+                font: 1rem $main-font
+                line-height: 130%
+                color: $broun
+            .type-item
+                font: 1.25rem $main-font
+                color: $light-broun
+            .item-desc
+                font: 0.75rem $main-font
+                padding: 0
+                margin: 0
+                line-height: 80%

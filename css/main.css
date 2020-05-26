@@ -1,4 +1,9 @@
 @import url(../css/fonts.css);
+.container {
+  max-width: 100%;
+  width: 1320px;
+}
+
 header .header-wrapper .modal .modal-dialog .modal-content {
   padding-top: 2%;
 }
@@ -33,7 +38,7 @@ header .header-wrapper .modal .modal-dialog .modal-content .modal-body .modal-su
 
 header .header-wrapper .modal .modal-dialog .modal-content .modal-body input {
   border-style: none;
-  border: 2px solid #2F110F;
+  border-bottom: 2px solid #2F110F;
   font: 800 1rem "Gilroy", sans-serif;
   padding: 10px 15px;
   margin: 3% 0;
@@ -53,7 +58,7 @@ header .header-wrapper .modal .modal-dialog .modal-content .modal-body .submit-b
   color: #2F110F;
   font: 800 1rem "Gilroy", sans-serif;
   text-transform: uppercase;
-  border-radius: .25rem;
+  border-radius: 99px;
 }
 
 header .header-wrapper .modal .modal-dialog .modal-content .modal-body .submit-btn:hover {
@@ -287,4 +292,62 @@ footer .content-wrapper .second-part .payment-icons .payment-icon .liqpay {
 
 footer .content-wrapper .second-part .payment-icons .payment-icon .cash-on-delivery {
   height: 20px;
+}
+
+.payment-and-delivery section {
+  padding-bottom: 6%;
+}
+
+.payment-and-delivery .section-title {
+  font: 400 2.25rem "Playfair Display", serif;
+  font-style: italic;
+  line-height: 48px;
+  color: #2F110F;
+  padding-bottom: 60px;
+}
+
+.payment-and-delivery h2 {
+  font: 900 0.875rem "Aktiv Grotesk Corp", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  line-height: 120%;
+}
+
+.payment-and-delivery h2::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 60px;
+  margin-top: 3px;
+  left: 48%;
+  height: 1px;
+  background-color: #2F110F;
+}
+
+.payment-and-delivery .payment-type-items li, .payment-and-delivery .delivery-type-items li {
+  padding: 20px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.payment-and-delivery .payment-type-items li:nth-last-child(1), .payment-and-delivery .delivery-type-items li:nth-last-child(1) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.payment-and-delivery .payment-type-items li p, .payment-and-delivery .delivery-type-items li p {
+  padding: 0 10px;
+  font: 1rem "Aktiv Grotesk Corp", sans-serif;
+  line-height: 130%;
+  color: #2F110F;
+}
+
+.payment-and-delivery .payment-type-items li .type-item, .payment-and-delivery .delivery-type-items li .type-item {
+  font: 1.25rem "Aktiv Grotesk Corp", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.payment-and-delivery .payment-type-items li .item-desc, .payment-and-delivery .delivery-type-items li .item-desc {
+  font: 0.75rem "Aktiv Grotesk Corp", sans-serif;
+  padding: 0;
+  margin: 0;
+  line-height: 80%;
 }
