@@ -14,18 +14,100 @@
 
 <body>
     <header>
-        <div class="container-fluid header-wrapper text-center">
-            <i class="fas fa-user-alt" data-toggle="modal" data-target="#sign-in-form"> Войти</i>
+        <div class="container-fluid header-wrapper">
+            <div class="row align-items-center py-2">
+                <div class="col-12 col-md-5 col-lg-4 col-xl-2 order-1">
+                    <ul class="navigation-links d-flex justify-content-between">
+                        <li class="navigation-link">
+                            <a target="_blank" href="https://maps.google.com/?q=Черкассы, Небесной Сотни 421/1" class=""
+                                title="Наш адресс">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i> <span>Черкассы</span>
+                            </a>
+                        </li>
+                        <li class="navigation-link">
+                            <a href="tel:+380637467656" class="" title="Позвонить нам">
+                                <span>+380637467656</span>
+                            </a>
+                        </li>
+                        <li class="navigation-link">
+                            <a href="https://www.facebook.com/shiynik" target="_blank" data-label="Facebook"
+                            title="Мы на Facebook">
+                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="navigation-link">
+                            <a href="https://www.instagram.com/shiynik/" target="_blank"
+                                rel="noopener noreferrer nofollow" data-label="Instagram"
+                                title="Мы в Instagram, подпишитесь!">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 col-lg-6 col-xl-8 order-2 order-md-1 d-flex">
+                    <h1 class="site-title py-3 py-md-0">
+                        <a href="index.html" class="logo" aria-label="Site Logo">
+                            <img src="/img/logo.png" alt="Site Logo">
+                        </a>
+                    </h1>
+                </div>
+                <div class="col-12 col-md-4 col-lg-2 col-xl-2 order-3 order-md-1">
+                    <ul class="control-btns d-flex justify-content-around">
+                        <li>
+                            <a class="sign-in" data-toggle="modal" data-target="#sign-in-form"> Войти</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <object class="wishlist icons" type="image/svg+xml" data="./src/heart.svg"></object>
+                            </a>
+                        </li>
+                        <li>
+                            <object class="cart icons" type="image/svg+xml" data="./src/shopping-bag.svg"></object>
+                        </li>
+                        <li>
+                            <object class="search_box icons" type="image/svg+xml" data="./src/search.svg"></object>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-md navbar-light">
+                <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto text-uppercase text-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Каталог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">О Нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Акции</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="delivery.html">Оплата и Доставка</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Блог</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             <div class="modal fade" id="sign-in-form" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                        <h5 class="modal-title">Добро пожаловать в
-                            <span class="cursive">Shiynik Leather Shop!</span>
+                        <h5 class="modal-title text-center">
+                            Добро пожаловать в
+                            <img class="d-block mx-auto pt-3" src="/img/logo.png" alt="Site Logo">
                         </h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                         <div class="modal-body">
+
                             <h3 class="modal-sub-title text-center text-uppercase">Авторизация</h3>
                             <form action="#" method="post" id="login-form" class="login text-center">
                                 <input type="email" placeholder="E-Mail" class="login-email w-75" value="">
@@ -33,7 +115,8 @@
                                 <br>
                                 <input type="submit" value="Войти" class="submit-btn py-1 px-3">
                                 <a class="forgot-pass">Забыли Ваш пароль?</a>
-                                <p>Еще не зарегистрированы? <a class="creat-account" data-toggle="modal" href="#sign-up-form">Создать аккаунт</a></p>
+                                <p>Еще не зарегистрированы? <a class="creat-account" data-toggle="modal"
+                                        href="#sign-up-form">Создать аккаунт</a></p>
                             </form>
                         </div>
                     </div>
@@ -55,7 +138,8 @@
                                 <input type="text" placeholder="Фамилия" class="login-subname w-75" value="">
                                 <input type="email" placeholder="E-Mail" class="login-email w-75" value="">
                                 <input type="text" placeholder="Пароль" class="login-password w-75" value="">
-                                <input type="text" placeholder="Повторить пароль" class="login-confirm-password w-75" value="">
+                                <input type="text" placeholder="Повторить пароль" class="login-confirm-password w-75"
+                                    value="">
                                 <input type="submit" value="Зарегистрироваться" class="submit-btn py-1 px-3">
                             </form>
                         </div>
@@ -64,62 +148,98 @@
             </div>
         </div>
     </header>
-    <section id="testimonials">
-        <div class="wrapper">
-            <h2 class="text-center text-uppercase testimonial-title">Мы в Instagram <a href="#" class="testimonial-link">@ shiynik</a>  - cледите за нами</h2>
-            <div class="elfsight-app-95d75ece-7679-4c13-92f9-8949e279aa04"></div> 
+    <!---- <section id="banner">
+        <div class="container-fluid carousel-wrapper px-0">
+            <a class="carousel-control-prev arrow" href="#carouselExampleIndicators" role="button" aria-label="Prev"
+                data-slide="prev">
+                <span class="fa fa-angle-left" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next arrow" href="#carouselExampleIndicators" role="button" aria-label="Next"
+                data-slide="next">
+                <span class="fa fa-angle-right" aria-hidden="true"></span>
+            </a>
+            <div id="carouselExampleIndicators" class="carousel slide m-auto" data-ride="carousel">
+                <ul class="carousel-inner">
+                    <li class="carousel-item slide-1 active text-center">
+                        <h2 class="py-3 text-uppercase">ручной пошив из натуральной кожи</h2>
+                        <h3 class="py-5 w-75 flex-wrap">качество <span>и</span> презентабельность <span>в</span> каждом изделии</h3>
+                        <a href="#" class="btn">Смотерть коллекцию</a>
+                    </li>
+                    <li class="carousel-item slide-2 text-center">
+                    </li>
+                    <li class="carousel-item slide-3 text-center">
+                    </li>
+                    <li>
+                        <ol class="carousel-indicators indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
+     
+    <section id="testimonials">
+        <div class="testimonials-wrapper">
+            <h2 class="text-center text-uppercase testimonial-title">Мы в Instagram <a href="#"
+                    class="testimonial-link">@ shiynik</a> - cледите за нами</h2>
+            <div class="elfsight-app-95d75ece-7679-4c13-92f9-8949e279aa04"></div>
+        </div>
+    </section> --->
     <footer>
         <div class="container-fluid content-wrapper">
             <div class="main-part row justify-content-md-center">
-                <div class="offset-lg-1 col-xs-8 col-md-6 col-lg-5 subscribe-form text-center text-lg-left">
+                <div class="offset-xl-1 col-xs-8 col-md-10 col-lg-6 col-xl-5 subscribe-form text-center text-lg-left pb-3">
                     <div class="descriprion-wrapper">
-                        <h2 class="subscribe_title">Подпишитесь</h2>
-                        <span class="subscribe_cursive"> - и получите скидку</span>
-                        <h2 class="subscribe_title">на первую покупку</h2>
+                        <h2 class="subscribe_title">Подпишитесь на нашу рассылку</h2>
+                        <span class="subscribe_cursive">&mdash; что бы быть в курсе</span>
+                        <h2 class="subscribe_title">наших новинок</h2>
                     </div>
                     <form class="mailchimp col-md-12 col-xl-8 text-center px-lg-3"
                         action="https://gmail.us4.list-manage.com/subscribe/post" method="POST">
-                        <p>*Введите ваш Email</p>
+                        <p class="text-md-left pl-md-5">*Введите ваш Email</p>
                         <input type="hidden" name="u" value="219558500c7fe6af6c9360caf">
                         <input type="hidden" name="id" value="c9e259e058">
                         <input type="email" autocapitalize="off" name="MERGE0" id="MERGE0" value=""
                             class="email w-75 mb-3">
-                        <div class="check-box">
+                        <div class="check-box text-md-left pl-md-5">
                             <label for="check_confirm"><input type="checkbox" name="check" id="check_confirm"
-                                    class="check_confirm ml-3"> Соглашаюсь получать уведомления от I.Shiynik</label>
+                                    class="check_confirm"> Соглашаюсь получать уведомления от I.Shiynik</label>
                         </div>
                         <input type="submit" class="formEmailButton w-75 mt-3" name="submit" value="Подписаться">
                     </form>
                 </div>
-                <div class="offset-md-1 col-xs-11 offset-lg-0 col-md-11 col-lg-6 info-block mt-4">
-                    <div class="row flex-wrap pb-5">
-                        <div class="col-xs-12 col-md-3 col-lg-4 location">
-                            <h4>Наш офис|Мастерская</h4>
+                <div class="offset-md-1 col-xs-11 offset-lg-0 col-md-11 col-lg-6 info-block pt-lg-4">
+                    <div class="row flex-wrap pb-5 text-center text-md-left">
+                        <div class="col-xs-12 col-md-4 col-lg-4 location mb-4">
+                            <h4>Наша мастерская</h4>
                             <address>
                                 <p>Черкассы</p>
-                                <p>ул. Небесной Сотни</p>
+                                <p>ул. Небесной Сотни, 105</p>
                                 <p>оф. 421/1</p>
+                                <p>Дом быта «Славутич»</p>
                             </address>
                             <h4 class="pt-4">Шоурум</h4>
                             <address>
                                 <p>Черкассы</p>
-                                <p>бул. Шевченка</p>
-                                <p>оф. 208/1</p>
+                                <p>буль. Шевченка, 208/1</p>
+                                <p>ТРЦ «Любава», 2 этаж,</p>
+                                <p>островок напр. маг. Stradivarius</p>
                             </address>
                         </div>
-                        <div class="col-xs-12 col-md-5 col-lg-4 mb-4">
+                        <div class="col-xs-12 col-md-4 col-lg-4 mb-4 flex-wrap">
                             <h4>Часы работы</h4>
                             <p class="working-time"><span>Пн - Пт:</span> c 9:00 до 18:00</p>
                             <p class="working-time"><span>Cб:</span> c 10:00 до 13:00</p>
-                            <h4 class="pt-4">Свяжитесь с нам</h4>
-                            <a class="contact-links d-block py-3" href="tel: +380637467656"><span>Телефон:</span> +380
-                                63 746 76 56</a>
+                            <h4 class="pt-5">Свяжитесь с нам</h4>
+                            <a class="contact-links d-block pb-4" href="tel: +380637467656"><span>Телефон:</span>
+                                +380637467656</a>
                             <a class="contact-links d-block" href="mailto: shiynik.sale@gmail.com"><span>Email:</span>
                                 shiynik.sale@gmail.com</a>
                         </div>
-                        <div class="col-xs-12 col-md-4 col-lg-4">
+                        <div class="col-xs-12 col-md-4 col-lg-4 mt-5 mt-md-0">
                             <h4>Информация</h4>
                             <ul class="info-links">
                                 <li>
@@ -177,6 +297,7 @@
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/745b3e3f4e.js" crossorigin="anonymous"></script>
+    <script src="/script/header.js" defer></script>
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 </body>
 
