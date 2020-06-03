@@ -19,6 +19,7 @@
 	font-style: normal;
 }
 
+
 @font-face {
     font-family: 'Gilroy';
     src: url('../fonts/Gilroy-Regular.eot');
@@ -28,4 +29,14 @@
         url('../fonts/Gilroy-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+	src: local('../fonts/PlayfairDisplay-Italic'), local('PlayfairDisplay-Italic'), 
+		url('../fonts/PlayfairDisplay-Italic.woff2') format('woff2'), 
+		url('../fonts/PlayfairDisplay-Italic.woff') format('woff'), 
+		url('../fonts/PlayfairDisplay-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
 }
