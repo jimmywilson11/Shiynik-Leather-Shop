@@ -3,3 +3,12 @@
   max-width: 100%;
   width: 1320px;
 }
+
+.section-title {
+  font: 800 0.875rem "Aktiv Grotesk Corp", sans-serif;
+  line-height: 120%;
+  color: #2F110F;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  text-align: center;
+}

@@ -4,6 +4,15 @@
   width: 1320px;
 }
 
+.section-title {
+  font: 800 0.875rem "Aktiv Grotesk Corp", sans-serif;
+  line-height: 120%;
+  color: #2F110F;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .fixed {
   position: fixed;
   background-color: #FFF;
@@ -523,17 +532,8 @@ footer .content-wrapper .second-part .payment-icons .payment-icon .cash-on-deliv
   margin: 2% 0;
 }
 
-#blog-posts .posts .post .post-image {
-  width: 30%;
-  height: auto;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-}
-
 #blog-posts .posts .post .post-description {
   border: 1px solid rgba(0, 0, 0, 0.25);
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
 }
 
 #blog-posts .posts .post .post-description .post-title {
@@ -544,13 +544,12 @@ footer .content-wrapper .second-part .payment-icons .payment-icon .cash-on-deliv
 
 #blog-posts .posts .post .post-description p {
   font: 500 1rem "Aktiv Grotesk Corp", sans-serif;
-  padding: 0 2%;
-  text-align: justify;
   text-indent: 1rem;
   line-height: 120%;
 }
 
 #blog-posts .posts .post .post-description .read-more-btn {
+  display: inline-block;
   color: #2F110F;
   padding: .5em 2em;
   border: 2px solid #2F110F;
@@ -575,4 +574,129 @@ footer .content-wrapper .second-part .payment-icons .payment-icon .cash-on-deliv
   line-height: 120%;
   text-indent: 1rem;
   padding: 2% 0;
+}
+
+.our-achievment .achievments .achievment-item {
+  border: none;
+}
+
+.our-achievment .achievments .achievment-item .color-wrapper {
+  background-color: rgba(217, 202, 206, 0.4);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border-bottom: none;
+  border: none;
+}
+
+.our-achievment .achievments .achievment-item .color-wrapper h3 {
+  padding: 20% 0 0 0;
+  text-align: center;
+  line-height: 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font: 600 6.5rem "Playfair Display", serif;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: -0.05em;
+}
+
+.our-achievment .achievments .description-wrapper .card-title {
+  font: normal 2.6rem "Playfair Display", serif;
+  line-height: 64px;
+}
+
+.our-achievment .achievments .description-wrapper .card-title span {
+  font-style: italic;
+}
+
+.our-achievment .achievments .description-wrapper .description {
+  text-indent: 1rem;
+  font: normal 1rem "Aktiv Grotesk Corp", sans-serif;
+  line-height: 190%;
+}
+
+#locations h4 {
+  text-transform: uppercase;
+  line-height: 120%;
+  letter-spacing: 0.24em;
+  font: 800 1rem "Aktiv Grotesk Corp", sans-serif;
+  color: #2F110F;
+}
+
+#locations .color-wrapper {
+  background-color: #FFF;
+}
+
+#locations .color-wrapper .content-wrapper {
+  padding: 2% 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+#locations .color-wrapper .content-wrapper .contact-us .phone, #locations .color-wrapper .content-wrapper .contact-us .email {
+  text-decoration: none;
+  color: #2F110F;
+  line-height: 100%;
+  font: 800 1rem "Gilroy", sans-serif;
+  padding: 1% 0;
+}
+
+#locations .color-wrapper .content-wrapper .contact-us .phone:hover, #locations .color-wrapper .content-wrapper .contact-us .email:hover {
+  color: #F34D1B;
+}
+
+#locations .color-wrapper .content-wrapper .contact-us .phone span, #locations .color-wrapper .content-wrapper .contact-us .email span {
+  color: rgba(0, 0, 0, 0.5);
+  font: 800 1rem "Gilroy", sans-serif;
+}
+
+#locations .color-wrapper .content-wrapper .contact-us .working-time {
+  font: 800 1rem "Aktiv Grotesk Corp", sans-serif;
+  color: #2F110F;
+  padding: 0;
+  margin: 0;
+}
+
+#locations .color-wrapper .content-wrapper .contact-us .working-time span {
+  color: rgba(0, 0, 0, 0.5);
+  font: 800 1rem "Gilroy", sans-serif;
+}
+
+#locations .color-wrapper .content-wrapper .address img {
+  width: 190px;
+  height: 110px;
+}
+
+#locations .color-wrapper .content-wrapper .address p {
+  padding: 0;
+  margin: 0;
+  color: #2F110F;
+  font: 500 1rem "Gilroy", sans-serif;
+}
+
+#stocks .stocks-wrapper .stock {
+  background-color: rgba(174, 167, 171, 0.1);
+}
+
+#stocks .stocks-wrapper .stock p {
+  font: normal 1rem "Aktiv Grotesk Corp", sans-serif;
+  color: #2F110F;
+}
+
+#stocks .stocks-wrapper .stock .stock-title {
+  font: 500 3rem "Playfair Display", serif;
+  font-style: italic;
+  line-height: 109.31%;
+  color: #2F110F;
+}
+
+#stocks .stocks-wrapper .stock .stock-title span {
+  color: #F34D1B;
+}
+
+#stocks .stocks-wrapper .stock .order-title {
+  font: 500 1.5rem "Playfair Display", serif;
 }
